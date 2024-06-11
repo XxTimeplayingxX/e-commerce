@@ -1,0 +1,44 @@
+@media only screen and (min-width: 0rem) {
+
+  #collection-1602 .cs-button {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 0;
+    color: var(--bodyTextColor);
+    background-color: transparent;
+    border: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  #collection-1602 .cs-button:before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: var(--primary);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+  }
+
+  #collection-1602 .cs-button:hover {
+    color: var(--primary);
+    cursor: pointer;
+  }
+
+  #collection-1602 .cs-button:hover:before {
+    width: 100%;
+  }
+
+  #collection-1602 .cs-button.cs-active {
+    color: var(--primary);
+  }
+
+  #collection-1602 .cs-button.cs-active:before {
+    width: 100%;
+  }
+}
